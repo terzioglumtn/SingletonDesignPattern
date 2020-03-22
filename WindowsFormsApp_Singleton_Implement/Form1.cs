@@ -22,5 +22,11 @@ namespace WindowsFormsApp_Singleton_Implement
             FxFunction fx = FxFunction.GetInstance();
             dataGridView.DataSource = fx.GetData("Select * from Categories");
         }
+
+        private void button_get_products_Click(object sender, EventArgs e)
+        {
+            FxFunction fx = FxFunction.GetInstance();
+            dataGridView.DataSource = fx.GetData("Select * from Products");
+        }
     }
 }
